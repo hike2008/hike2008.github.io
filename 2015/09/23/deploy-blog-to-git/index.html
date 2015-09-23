@@ -4,12 +4,19 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello World | Aegis Blog</title>
+    <title>安装Hexo并发布到Github | Aegis Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Aegis Lee">
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+    <meta name="description" content="#安装Hexo
+hexo commands1，进入Nodejs download下载对于版本的可执行文件，并安装。
+2，执行命令npm instal hexo-cli -g。
+
+此处可能会提示链接超时，此时建议使用淘宝镜像进行安装，具体命令如下：
+`
+
+npm install -g hexo-cli">
     
     
     
@@ -65,15 +72,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/09/23/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2015/09/23/deploy-blog-to-git/" title="安装Hexo并发布到Github" itemprop="url">安装Hexo并发布到Github</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://yoursite.com" title="Aegis Lee">Aegis Lee</a>
     </p>
   <p class="article-time">
-    <time datetime="2015-09-23T07:25:04.250Z" itemprop="datePublished">2015-09-23</time>
-    更新日期:<time datetime="2015-09-23T07:25:04.250Z" itemprop="dateModified">2015-09-23</time>
+    <time datetime="2015-09-23T09:43:09.260Z" itemprop="datePublished">2015-09-23</time>
+    更新日期:<time datetime="2015-09-23T09:43:09.260Z" itemprop="dateModified">2015-09-23</time>
     
   </p>
 </header>
@@ -82,18 +89,68 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo_commands"><span class="toc-number">1.</span> <span class="toc-text">hexo commands</span></a></li></ol>
 		</div>
 		
-		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+		<p>#安装Hexo</p>
+<h2 id="hexo_commands"><a href="https://hexo.io/docs/commands.html" target="_blank" rel="external">hexo commands</a></h2><p>1，进入<a href="https://nodejs.org/en/" target="_blank" rel="external">Nodejs download</a>下载对于版本的可执行文件，并安装。</p>
+<p>2，执行命令npm instal hexo-cli -g。</p>
+<blockquote>
+<pre><code>此处可能会提示链接超时，此时建议使用淘宝镜像进行安装，具体命令如下：
+`
+</code></pre><ul>
+<li>npm install -g hexo-cli –registry=<a href="https://registry.npm.taobao.org`" target="_blank" rel="external">https://registry.npm.taobao.org`</a><br>  若不使用此镜像，则请自行翻墙安装。</li>
+</ul>
+</blockquote>
+<p>3，hexo初始化。</p>
+<blockquote>
+<pre><code>新建一个文件夹，随便取名；右键-git <span class="keyword">bash打开git命令行；
+</span>执行命令：
+<span class="label">hexo</span> init <span class="keyword">blog; </span>   //<span class="keyword">bolg为目标folder
+</span><span class="label">cd</span> <span class="keyword">blog;
+</span><span class="label">npm</span> install<span class="comment">;</span>
+</code></pre></blockquote>
+<p>4，启动hexo服务器：hexo server。    //在对应目录打开命令行,执行如: E:/blog/node_modules/bin</p>
+<p>5，在浏览器打开localhost:4000进行预览静态页面效果。</p>
+<pre><code>常用命令：
+    初始化：  hexo init [folder]
+    新建：  hexo new "Hello World" 
+    编译：  hexo generate
+            _Option    Description_
+            -<span class="ruby">d,         --deploy        <span class="constant">Deploy</span> after generation finishes
+</span>            -<span class="ruby">w,          --watch        <span class="constant">Watch</span> file changes
+</span>    发布：     hexo publish [layout] &lt;filename&gt;
+    启动服务器： hexo server
+            Option    Description
+            -<span class="ruby">p,     --port        <span class="constant">Override</span> default port
+</span>            -<span class="ruby">s,     --static        <span class="constant">Only</span> serve static files
+</span>            -<span class="ruby">l,     --log        <span class="constant">Enable</span> logger. <span class="constant">Override</span> logger format.
+</span>    部署：    hexo deploy
+            Option    Description
+            -<span class="ruby">g,         --generate    <span class="constant">Generate</span> before deployment</span>
+</code></pre><blockquote>
+<p>render<br>$ hexo render &lt;file1[file2] …<br>Renders files.</p>
+<p>Option    Description<br>-o, –output    Output destination<br>migrate<br>$ hexo migrate <type><br>Migrates content from other blog systems.</type></p>
+<p>clean<br>$ hexo clean<br>Cleans the cache file (db.json) and generated files (public).</p>
+<p>list<br>$ hexo list <type><br>Lists all routes.</type></p>
+<p>version<br>$ hexo version<br>Displays version information.</p>
+<p>Options<br>Safe mode<br>$ hexo –safe<br>Disables loading plugins and scripts. Try this if you encounter problems after installing a new plugin.</p>
+<p>Debug mode<br>$ hexo –debug<br>Logs verbose messages to the terminal and to debug.log. Try this if you encounter any problems with Hexo. If you see errors, please raise a GitHub issue.</p>
+<p>Silent mode<br>$ hexo –silent<br>Silences output to the terminal.</p>
+<p>Customize config file path<br>$ hexo –config custom.yml<br>Uses a custom config file (instead of _config.yml).</p>
+<p>Display drafts<br>$ hexo –draft<br>Displays draft posts (stored in the source/_drafts folder).</p>
+<p>Customize CWD</p>
+<p>$ hexo –cwd /path/to/cwd</p>
+</blockquote>
+<p>6，部署博客到github。</p>
+<ul>
+<li>创建github仓库，名为username.github.io，建议初始化，建议同时初始化一个readme</li>
+<li>执行ssh-keygen -t rsa -C “user_eamil”(设置密码则push是需输入密码，否则可直接push)</li>
+<li>在github的settings —&gt;SSH Keys—&gt;ADD SSH Key 中将在C:\Users\Administrator.ssh目录中生成的id_rsa.pub中的内容拷贝到里面</li>
+<li>执行ssh -T git@github.com ， 建立远程连接</li>
+<li>执行npm install hexo-deployer-git –save ， 安装git部署插件</li>
+</ul>
+<p>参考<a href="http://blog.csdn.net/poem_of_sunshine/article/details/29369785" target="_blank" rel="external">^hello</a></p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -103,7 +160,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://yoursite.com/2015/09/23/hello-world/" data-title="Hello World | Aegis Blog" data-tsina="null" class="share clearfix">
+  <div data-url="http://yoursite.com/2015/09/23/deploy-blog-to-git/" data-title="安装Hexo并发布到Github | Aegis Blog" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -112,14 +169,14 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2015/09/23/deploy-blog-to-git/" title="安装Hexo并发布到Github">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  安装Hexo并发布到Github</span>
+
+<div class="next">
+<a href="/2015/09/23/hello-world/"  title="Hello World">
+ <strong>NEXT:</strong><br/> 
+ <span>Hello World
+</span>
 </a>
 </div>
-
 
 </nav>
 
@@ -129,7 +186,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#hexo_commands"><span class="toc-number">1.</span> <span class="toc-text">hexo commands</span></a></li></ol>
   </div>
 
 <div id="asidepart">
